@@ -9,8 +9,10 @@ for numberSelected in range(1,9):
     guess =int(input())
 
     if guess < selectedNumber:
+        # If the player enters a number lesser than the computer chosed number
         print('Your selected number is smaller than actual number. TRY AGAIN!')
     elif guess > selectedNumber:
+        # If the player enters a number greater than the computer chosed number
         print('Your selected number is bigger than actual number. TRY AGAIN')
     else:
         break
