@@ -9,15 +9,17 @@ for numberSelected in range(1,9):
     guess =int(input())
 
     if guess < selectedNumber:
-        # If the player enters a number lesser than the computer chosed number
+        # If the player enters a number lesser than the number the computer chose
         print('Your selected number is smaller than actual number. TRY AGAIN!')
     elif guess > selectedNumber:
-        # If the player enters a number greater than the computer chosed number
+        # If the player enters a number greater than the number the computer chose
         print('Your selected number is bigger than actual number. TRY AGAIN')
     else:
         break
     
 if guess == selectedNumber:
+    #If the player enters the same number the computer chose
     print('CONGRATS!! You have successfully guessed my number in '+ str(numberSelected)  + 'guesses!')
 else:
+    #If the player doesn't get the number the computer chose after 8 attempts
     print('GAME OVER. The number in mind was '+  str(selectedNumber))
